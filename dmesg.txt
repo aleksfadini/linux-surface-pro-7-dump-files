@@ -1064,3 +1064,5 @@
 [   12.321548] IPv6: ADDRCONF(NETDEV_CHANGE): wlp0s20f3: link becomes ready
 [   15.006424] audit: type=1131 audit(1572480831.273:29): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
 [   34.954284] audit: type=1131 audit(1572480851.223:30): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  902.092062] audit: type=1130 audit(1572481718.360:31): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  902.092065] audit: type=1131 audit(1572481718.360:32): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
