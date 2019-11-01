@@ -1,0 +1,635 @@
+-- Logs begin at Thu 2019-10-31 04:57:54 EDT, end at Thu 2019-10-31 20:20:53 EDT. --
+Oct 31 20:09:02 BlackLightSpeed kernel: Linux version 5.3.8-2-surface-ipts-test (dorian@desktop) (gcc version 9.2.1 20190827 (Red Hat 9.2.1-1) (GCC)) #3 SMP PREEMPT Thu Oct 31 02:16:27 CET 2019
+Oct 31 20:09:02 BlackLightSpeed kernel: Command line: initrd=\initramfs-linux-surface-ipts-test.img root=PARTUUID=500911e8-446c-4e71-8804-d4b5f5979d26 rw intel_ipts.ignore_companion=1 i915.alpha_support i915.enable_guc=3
+Oct 31 20:09:02 BlackLightSpeed kernel: KERNEL supported cpus:
+Oct 31 20:09:02 BlackLightSpeed kernel:   Intel GenuineIntel
+Oct 31 20:09:02 BlackLightSpeed kernel:   AMD AuthenticAMD
+Oct 31 20:09:02 BlackLightSpeed kernel:   Hygon HygonGenuine
+Oct 31 20:09:02 BlackLightSpeed kernel:   Centaur CentaurHauls
+Oct 31 20:09:02 BlackLightSpeed kernel:   zhaoxin   Shanghai  
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 opmask'
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 ZMM_Hi256'
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/fpu: xstate_offset[5]:  832, xstate_sizes[5]:   64
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/fpu: xstate_offset[6]:  896, xstate_sizes[6]:  512
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/fpu: xstate_offset[7]: 1408, xstate_sizes[7]: 1024
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/fpu: xstate_offset[9]: 2432, xstate_sizes[9]:    8
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/fpu: Enabled xstate features 0x2e7, context size is 2440 bytes, using 'compacted' format.
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-provided physical RAM map:
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-e820: [mem 0x00000000000a0000-0x00000000000fffff] reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-e820: [mem 0x0000000000100000-0x000000007ab44fff] usable
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-e820: [mem 0x000000007ab45000-0x000000007ab45fff] ACPI NVS
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-e820: [mem 0x000000007ab46000-0x000000007ab46fff] reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-e820: [mem 0x000000007ab47000-0x000000007beedfff] usable
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-e820: [mem 0x000000007beee000-0x000000007bf89fff] reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-e820: [mem 0x000000007bf8a000-0x000000007bfb3fff] ACPI NVS
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-e820: [mem 0x000000007bfb4000-0x000000007bffefff] ACPI data
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-e820: [mem 0x000000007bfff000-0x000000007bffffff] usable
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-e820: [mem 0x000000007c000000-0x00000000953fffff] reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-e820: [mem 0x00000000fe010000-0x00000000fe010fff] reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-e820: [mem 0x00000000fed20000-0x00000000fed7ffff] reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: BIOS-e820: [mem 0x0000000100000000-0x000000046abfffff] usable
+Oct 31 20:09:02 BlackLightSpeed kernel: NX (Execute Disable) protection: active
+Oct 31 20:09:02 BlackLightSpeed kernel: efi: EFI v2.70 by MSFT
+Oct 31 20:09:02 BlackLightSpeed kernel: efi:  ACPI=0x7bffe000  ACPI 2.0=0x7bffe014  SMBIOS=0x7bf51000  SMBIOS 3.0=0x7bf4f000  MEMATTR=0x78669018  ESRT=0x78e4fc98 
+Oct 31 20:09:02 BlackLightSpeed kernel: SMBIOS 3.2.0 present.
+Oct 31 20:09:02 BlackLightSpeed kernel: DMI: Microsoft Corporation Surface Pro 7/Surface Pro 7, BIOS 7.157.140 08/25/2019
+Oct 31 20:09:02 BlackLightSpeed kernel: tsc: Detected 1500.000 MHz processor
+Oct 31 20:09:02 BlackLightSpeed kernel: tsc: Detected 1497.600 MHz TSC
+Oct 31 20:09:02 BlackLightSpeed kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Oct 31 20:09:02 BlackLightSpeed kernel: last_pfn = 0x46ac00 max_arch_pfn = 0x400000000
+Oct 31 20:09:02 BlackLightSpeed kernel: MTRR default type: write-back
+Oct 31 20:09:02 BlackLightSpeed kernel: MTRR fixed ranges enabled:
+Oct 31 20:09:02 BlackLightSpeed kernel:   00000-9FFFF write-back
+Oct 31 20:09:02 BlackLightSpeed kernel:   A0000-BFFFF uncachable
+Oct 31 20:09:02 BlackLightSpeed kernel:   C0000-FFFFF write-protect
+Oct 31 20:09:02 BlackLightSpeed kernel: MTRR variable ranges enabled:
+Oct 31 20:09:02 BlackLightSpeed kernel:   0 base 00C0000000 mask 7FC0000000 uncachable
+Oct 31 20:09:02 BlackLightSpeed kernel:   1 base 00A0000000 mask 7FE0000000 uncachable
+Oct 31 20:09:02 BlackLightSpeed kernel:   2 base 0098000000 mask 7FF8000000 uncachable
+Oct 31 20:09:02 BlackLightSpeed kernel:   3 base 0094000000 mask 7FFC000000 uncachable
+Oct 31 20:09:02 BlackLightSpeed kernel:   4 base 0092000000 mask 7FFE000000 uncachable
+Oct 31 20:09:02 BlackLightSpeed kernel:   5 base 0091000000 mask 7FFF000000 uncachable
+Oct 31 20:09:02 BlackLightSpeed kernel:   6 base 6000000000 mask 6000000000 uncachable
+Oct 31 20:09:02 BlackLightSpeed kernel:   7 base 4000000000 mask 6000000000 write-combining
+Oct 31 20:09:02 BlackLightSpeed kernel:   8 disabled
+Oct 31 20:09:02 BlackLightSpeed kernel:   9 disabled
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Oct 31 20:09:02 BlackLightSpeed kernel: last_pfn = 0x7c000 max_arch_pfn = 0x400000000
+Oct 31 20:09:02 BlackLightSpeed kernel: esrt: Reserving ESRT space from 0x0000000078e4fc98 to 0x0000000078e4fd70.
+Oct 31 20:09:02 BlackLightSpeed kernel: check: Scanning 1 areas for low memory corruption
+Oct 31 20:09:02 BlackLightSpeed kernel: Using GB pages for direct mapping
+Oct 31 20:09:02 BlackLightSpeed kernel: BRK [0x169a01000, 0x169a01fff] PGTABLE
+Oct 31 20:09:02 BlackLightSpeed kernel: BRK [0x169a02000, 0x169a02fff] PGTABLE
+Oct 31 20:09:02 BlackLightSpeed kernel: BRK [0x169a03000, 0x169a03fff] PGTABLE
+Oct 31 20:09:02 BlackLightSpeed kernel: BRK [0x169a04000, 0x169a04fff] PGTABLE
+Oct 31 20:09:02 BlackLightSpeed kernel: BRK [0x169a05000, 0x169a05fff] PGTABLE
+Oct 31 20:09:02 BlackLightSpeed kernel: BRK [0x169a06000, 0x169a06fff] PGTABLE
+Oct 31 20:09:02 BlackLightSpeed kernel: BRK [0x169a07000, 0x169a07fff] PGTABLE
+Oct 31 20:09:02 BlackLightSpeed kernel: BRK [0x169a08000, 0x169a08fff] PGTABLE
+Oct 31 20:09:02 BlackLightSpeed kernel: Secure boot disabled
+Oct 31 20:09:02 BlackLightSpeed kernel: RAMDISK: [mem 0x77404000-0x77caefff]
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Early table checksum verification disabled
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: RSDP 0x000000007BFFE014 000024 (v02 MSFT  )
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: XSDT 0x000000007BFFD0E8 0000AC (v01 MSFT   MSFT     00000002 MSFT 20160422)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: FACP 0x000000007BFE7000 000114 (v06 MSFT   MSFT     00000002 MSFT 20160422)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: DSDT 0x000000007BFC6000 01CB6D (v02 MSFT   MSFT     00000002 MSFT 20160422)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: FACS 0x000000007BF9A000 000040
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0x000000007BFFB000 001B61 (v02 CpuRef CpuSsdt  00003000 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: MSDM 0x000000007BFFA000 000055 (v01 MSFT            00000001 MSFT 00000001)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0x000000007BFF3000 006245 (v02 OEMID  DptfTabl 00001000 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0x000000007BFEF000 0033E3 (v02 SaSsdt SaSsdt   00003000 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0x000000007BFE8000 0066EF (v02 INTEL  TcssSsdt 00001000 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: HPET 0x000000007BFE6000 000038 (v01 MSFT   MSFT     00000002 MSFT 20160422)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LPIT 0x000000007BFE5000 000094 (v01 MSFT   MSFT     00000002 MSFT 20160422)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: APIC 0x000000007BFE4000 00012C (v03 MSFT   MSFT     00000002 MSFT 20160422)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: MCFG 0x000000007BFE3000 00003C (v01 MSFT   MSFT     00000002 MSFT 20160422)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0x000000007BFC5000 000DB4 (v02 MSFT   RTD3_JL  00001000 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0x000000007BFC4000 0009E3 (v02 MSFT   xh_jl000 00000000 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: NHLT 0x000000007BFC3000 00002D (v00 MSFT   MSFT     00000002 MSFT 20160422)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: DMAR 0x000000007BFC2000 000088 (v01 MSFT   MSFT     00000002 MSFT 20160422)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: WSMT 0x000000007BFC0000 000028 (v01 MSFT   MSFT     00000002 MSFT 20160422)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: FPDT 0x000000007BFBF000 000034 (v01 MSFT   MSFT     00000002 MSFT 20160422)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: BGRT 0x000000007BFC1000 000038 (v01 MSFT   MSFT     00000002 MSFT 20160422)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Local APIC address 0xfee00000
+Oct 31 20:09:02 BlackLightSpeed kernel: No NUMA configuration found
+Oct 31 20:09:02 BlackLightSpeed kernel: Faking a node at [mem 0x0000000000000000-0x000000046abfffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: NODE_DATA(0) allocated [mem 0x46abfc000-0x46abfffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: Zone ranges:
+Oct 31 20:09:02 BlackLightSpeed kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Oct 31 20:09:02 BlackLightSpeed kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Oct 31 20:09:02 BlackLightSpeed kernel:   Normal   [mem 0x0000000100000000-0x000000046abfffff]
+Oct 31 20:09:02 BlackLightSpeed kernel:   Device   empty
+Oct 31 20:09:02 BlackLightSpeed kernel: Movable zone start for each node
+Oct 31 20:09:02 BlackLightSpeed kernel: Early memory node ranges
+Oct 31 20:09:02 BlackLightSpeed kernel:   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+Oct 31 20:09:02 BlackLightSpeed kernel:   node   0: [mem 0x0000000000100000-0x000000007ab44fff]
+Oct 31 20:09:02 BlackLightSpeed kernel:   node   0: [mem 0x000000007ab47000-0x000000007beedfff]
+Oct 31 20:09:02 BlackLightSpeed kernel:   node   0: [mem 0x000000007bfff000-0x000000007bffffff]
+Oct 31 20:09:02 BlackLightSpeed kernel:   node   0: [mem 0x0000000100000000-0x000000046abfffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: Zeroed struct page in unavailable ranges: 16756 pages
+Oct 31 20:09:02 BlackLightSpeed kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000046abfffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: On node 0 totalpages: 4090508
+Oct 31 20:09:02 BlackLightSpeed kernel:   DMA zone: 64 pages used for memmap
+Oct 31 20:09:02 BlackLightSpeed kernel:   DMA zone: 24 pages reserved
+Oct 31 20:09:02 BlackLightSpeed kernel:   DMA zone: 3999 pages, LIFO batch:0
+Oct 31 20:09:02 BlackLightSpeed kernel:   DMA32 zone: 7868 pages used for memmap
+Oct 31 20:09:02 BlackLightSpeed kernel:   DMA32 zone: 503533 pages, LIFO batch:63
+Oct 31 20:09:02 BlackLightSpeed kernel:   Normal zone: 55984 pages used for memmap
+Oct 31 20:09:02 BlackLightSpeed kernel:   Normal zone: 3582976 pages, LIFO batch:63
+Oct 31 20:09:02 BlackLightSpeed kernel: Reserving Intel graphics memory at [mem 0x91800000-0x953fffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: PM-Timer IO Port: 0x1808
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Local APIC address 0xfee00000
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: LAPIC_NMI (acpi_id[0x10] high edge lint[0x1])
+Oct 31 20:09:02 BlackLightSpeed kernel: IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: IRQ0 used by override.
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: IRQ9 used by override.
+Oct 31 20:09:02 BlackLightSpeed kernel: Using ACPI (MADT) for SMP configuration information
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Oct 31 20:09:02 BlackLightSpeed kernel: smpboot: Allowing 8 CPUs, 0 hotplug CPUs
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registered nosave memory: [mem 0x7ab45000-0x7ab45fff]
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registered nosave memory: [mem 0x7ab46000-0x7ab46fff]
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registered nosave memory: [mem 0x7beee000-0x7bf89fff]
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registered nosave memory: [mem 0x7bf8a000-0x7bfb3fff]
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registered nosave memory: [mem 0x7bfb4000-0x7bffefff]
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registered nosave memory: [mem 0x7c000000-0x953fffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registered nosave memory: [mem 0x95400000-0xfe00ffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registered nosave memory: [mem 0xfe010000-0xfe010fff]
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registered nosave memory: [mem 0xfe011000-0xfed1ffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registered nosave memory: [mem 0xfed20000-0xfed7ffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registered nosave memory: [mem 0xfed80000-0xffffffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: [mem 0x95400000-0xfe00ffff] available for PCI devices
+Oct 31 20:09:02 BlackLightSpeed kernel: Booting paravirtualized kernel on bare hardware
+Oct 31 20:09:02 BlackLightSpeed kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370452778343963 ns
+Oct 31 20:09:02 BlackLightSpeed kernel: setup_percpu: NR_CPUS:320 nr_cpumask_bits:320 nr_cpu_ids:8 nr_node_ids:1
+Oct 31 20:09:02 BlackLightSpeed kernel: percpu: Embedded 54 pages/cpu s184320 r8192 d28672 u262144
+Oct 31 20:09:02 BlackLightSpeed kernel: pcpu-alloc: s184320 r8192 d28672 u262144 alloc=1*2097152
+Oct 31 20:09:02 BlackLightSpeed kernel: pcpu-alloc: [0] 0 1 2 3 4 5 6 7 
+Oct 31 20:09:02 BlackLightSpeed kernel: Built 1 zonelists, mobility grouping on.  Total pages: 4026568
+Oct 31 20:09:02 BlackLightSpeed kernel: Policy zone: Normal
+Oct 31 20:09:02 BlackLightSpeed kernel: Kernel command line: initrd=\initramfs-linux-surface-ipts-test.img root=PARTUUID=500911e8-446c-4e71-8804-d4b5f5979d26 rw intel_ipts.ignore_companion=1 i915.alpha_support i915.enable_guc=3
+Oct 31 20:09:02 BlackLightSpeed kernel: Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+Oct 31 20:09:02 BlackLightSpeed kernel: Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Oct 31 20:09:02 BlackLightSpeed kernel: mem auto-init: stack:byref_all, heap alloc:off, heap free:off
+Oct 31 20:09:02 BlackLightSpeed kernel: Calgary: detecting Calgary via BIOS EBDA area
+Oct 31 20:09:02 BlackLightSpeed kernel: Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+Oct 31 20:09:02 BlackLightSpeed kernel: Memory: 15902740K/16362032K available (12291K kernel code, 1321K rwdata, 3952K rodata, 1628K init, 3556K bss, 459292K reserved, 0K cma-reserved)
+Oct 31 20:09:02 BlackLightSpeed kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+Oct 31 20:09:02 BlackLightSpeed kernel: ftrace: allocating 37801 entries in 148 pages
+Oct 31 20:09:02 BlackLightSpeed kernel: rcu: Preemptible hierarchical RCU implementation.
+Oct 31 20:09:02 BlackLightSpeed kernel: rcu:         CONFIG_RCU_FANOUT set to non-default value of 32.
+Oct 31 20:09:02 BlackLightSpeed kernel: rcu:         RCU dyntick-idle grace-period acceleration is enabled.
+Oct 31 20:09:02 BlackLightSpeed kernel: rcu:         RCU restricting CPUs from NR_CPUS=320 to nr_cpu_ids=8.
+Oct 31 20:09:02 BlackLightSpeed kernel: rcu:         RCU priority boosting: priority 1 delay 500 ms.
+Oct 31 20:09:02 BlackLightSpeed kernel:         Tasks RCU enabled.
+Oct 31 20:09:02 BlackLightSpeed kernel: rcu: RCU calculated value of scheduler-enlistment delay is 30 jiffies.
+Oct 31 20:09:02 BlackLightSpeed kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+Oct 31 20:09:02 BlackLightSpeed kernel: NR_IRQS: 20736, nr_irqs: 2048, preallocated irqs: 16
+Oct 31 20:09:02 BlackLightSpeed kernel: rcu:         Offload RCU callbacks from CPUs: (none).
+Oct 31 20:09:02 BlackLightSpeed kernel: random: get_random_bytes called from start_kernel+0x3ce/0x5a9 with crng_init=0
+Oct 31 20:09:02 BlackLightSpeed kernel: Console: colour dummy device 80x25
+Oct 31 20:09:02 BlackLightSpeed kernel: printk: console [tty0] enabled
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Core revision 20190703
+Oct 31 20:09:02 BlackLightSpeed kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 99544814920 ns
+Oct 31 20:09:02 BlackLightSpeed kernel: APIC: Switch to symmetric I/O mode setup
+Oct 31 20:09:02 BlackLightSpeed kernel: DMAR: Host address width 39
+Oct 31 20:09:02 BlackLightSpeed kernel: DMAR: DRHD base: 0x000000fed90000 flags: 0x0
+Oct 31 20:09:02 BlackLightSpeed kernel: DMAR: dmar0: reg_base_addr fed90000 ver 4:0 cap 1c0000c40660462 ecap 49e2ff0505e
+Oct 31 20:09:02 BlackLightSpeed kernel: DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+Oct 31 20:09:02 BlackLightSpeed kernel: DMAR: dmar1: reg_base_addr fed91000 ver 1:0 cap d2008c40660462 ecap f050da
+Oct 31 20:09:02 BlackLightSpeed kernel: DMAR: RMRR base: 0x00000091000000 end: 0x000000953fffff
+Oct 31 20:09:02 BlackLightSpeed kernel: DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+Oct 31 20:09:02 BlackLightSpeed kernel: DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+Oct 31 20:09:02 BlackLightSpeed kernel: DMAR-IR: x2apic is disabled because BIOS sets x2apic opt out bit.
+Oct 31 20:09:02 BlackLightSpeed kernel: DMAR-IR: Use 'intremap=no_x2apic_optout' to override the BIOS setting.
+Oct 31 20:09:02 BlackLightSpeed kernel: DMAR-IR: Enabled IRQ remapping in xapic mode
+Oct 31 20:09:02 BlackLightSpeed kernel: x2apic: IRQ remapping doesn't support X2APIC mode
+Oct 31 20:09:02 BlackLightSpeed kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Oct 31 20:09:02 BlackLightSpeed kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x159647815e3, max_idle_ns: 440795269835 ns
+Oct 31 20:09:02 BlackLightSpeed kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 2996.00 BogoMIPS (lpj=4992000)
+Oct 31 20:09:02 BlackLightSpeed kernel: pid_max: default: 32768 minimum: 301
+Oct 31 20:09:02 BlackLightSpeed kernel: LSM: Security Framework initializing
+Oct 31 20:09:02 BlackLightSpeed kernel: Yama: becoming mindful.
+Oct 31 20:09:02 BlackLightSpeed kernel: Mount-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Oct 31 20:09:02 BlackLightSpeed kernel: Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Oct 31 20:09:02 BlackLightSpeed kernel: *** VALIDATE proc ***
+Oct 31 20:09:02 BlackLightSpeed kernel: *** VALIDATE cgroup1 ***
+Oct 31 20:09:02 BlackLightSpeed kernel: *** VALIDATE cgroup2 ***
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated
+Oct 31 20:09:02 BlackLightSpeed kernel: mce: CPU0: Thermal monitoring enabled (TM1)
+Oct 31 20:09:02 BlackLightSpeed kernel: process: using mwait in idle threads
+Oct 31 20:09:02 BlackLightSpeed kernel: Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+Oct 31 20:09:02 BlackLightSpeed kernel: Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+Oct 31 20:09:02 BlackLightSpeed kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Oct 31 20:09:02 BlackLightSpeed kernel: Spectre V2 : Mitigation: Enhanced IBRS
+Oct 31 20:09:02 BlackLightSpeed kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Oct 31 20:09:02 BlackLightSpeed kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+Oct 31 20:09:02 BlackLightSpeed kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+Oct 31 20:09:02 BlackLightSpeed kernel: Freeing SMP alternatives memory: 32K
+Oct 31 20:09:02 BlackLightSpeed kernel: TSC deadline timer enabled
+Oct 31 20:09:02 BlackLightSpeed kernel: smpboot: CPU0: Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz (family: 0x6, model: 0x7e, stepping: 0x5)
+Oct 31 20:09:02 BlackLightSpeed kernel: Performance Events: PEBS fmt4+-baseline, Icelake events, 32-deep LBR, full-width counters, Intel PMU driver.
+Oct 31 20:09:02 BlackLightSpeed kernel: ... version:                5
+Oct 31 20:09:02 BlackLightSpeed kernel: ... bit width:              48
+Oct 31 20:09:02 BlackLightSpeed kernel: ... generic registers:      8
+Oct 31 20:09:02 BlackLightSpeed kernel: ... value mask:             0000ffffffffffff
+Oct 31 20:09:02 BlackLightSpeed kernel: ... max period:             00007fffffffffff
+Oct 31 20:09:02 BlackLightSpeed kernel: ... fixed-purpose events:   4
+Oct 31 20:09:02 BlackLightSpeed kernel: ... event mask:             0000000f000000ff
+Oct 31 20:09:02 BlackLightSpeed kernel: rcu: Hierarchical SRCU implementation.
+Oct 31 20:09:02 BlackLightSpeed kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+Oct 31 20:09:02 BlackLightSpeed kernel: smp: Bringing up secondary CPUs ...
+Oct 31 20:09:02 BlackLightSpeed kernel: x86: Booting SMP configuration:
+Oct 31 20:09:02 BlackLightSpeed kernel: .... node  #0, CPUs:      #1 #2 #3 #4 #5 #6 #7
+Oct 31 20:09:02 BlackLightSpeed kernel: smp: Brought up 1 node, 8 CPUs
+Oct 31 20:09:02 BlackLightSpeed kernel: smpboot: Max logical packages: 1
+Oct 31 20:09:02 BlackLightSpeed kernel: smpboot: Total of 8 processors activated (23971.00 BogoMIPS)
+Oct 31 20:09:02 BlackLightSpeed kernel: devtmpfs: initialized
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/mm: Memory block size: 128MB
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registering ACPI NVS region [mem 0x7ab45000-0x7ab45fff] (4096 bytes)
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: Registering ACPI NVS region [mem 0x7bf8a000-0x7bfb3fff] (172032 bytes)
+Oct 31 20:09:02 BlackLightSpeed kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+Oct 31 20:09:02 BlackLightSpeed kernel: futex hash table entries: 2048 (order: 5, 131072 bytes, linear)
+Oct 31 20:09:02 BlackLightSpeed kernel: pinctrl core: initialized pinctrl subsystem
+Oct 31 20:09:02 BlackLightSpeed kernel: PM: RTC time: 00:09:00, date: 2019-11-01
+Oct 31 20:09:02 BlackLightSpeed kernel: NET: Registered protocol family 16
+Oct 31 20:09:02 BlackLightSpeed kernel: audit: initializing netlink subsys (disabled)
+Oct 31 20:09:02 BlackLightSpeed kernel: audit: type=2000 audit(1572566940.369:1): state=initialized audit_enabled=0 res=1
+Oct 31 20:09:02 BlackLightSpeed kernel: cpuidle: using governor ladder
+Oct 31 20:09:02 BlackLightSpeed kernel: cpuidle: using governor menu
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: bus type PCI registered
+Oct 31 20:09:02 BlackLightSpeed kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Oct 31 20:09:02 BlackLightSpeed kernel: PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xe0000000-0xefffffff] (base 0xe0000000)
+Oct 31 20:09:02 BlackLightSpeed kernel: PCI: not using MMCONFIG
+Oct 31 20:09:02 BlackLightSpeed kernel: PCI: Using configuration type 1 for base access
+Oct 31 20:09:02 BlackLightSpeed kernel: ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+Oct 31 20:09:02 BlackLightSpeed kernel: HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+Oct 31 20:09:02 BlackLightSpeed kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Added _OSI(Module Device)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Added _OSI(Processor Device)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Added _OSI(Linux-Dell-Video)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: 7 ACPI AML tables successfully acquired and loaded
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Dynamic OEM Table Load:
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0xFFFF9E53D7D62800 0000F4 (v02 PmRef  Cpu0Psd  00003000 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: \_SB_.PR00: _OSC native thermal LVT Acked
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Dynamic OEM Table Load:
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0xFFFF9E53D7E6DC00 000394 (v02 PmRef  Cpu0Cst  00003001 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Dynamic OEM Table Load:
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0xFFFF9E53D8177000 000437 (v02 PmRef  Cpu0Ist  00003000 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Dynamic OEM Table Load:
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0xFFFF9E53D7D66600 00012C (v02 PmRef  Cpu0Hwp  00003000 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Dynamic OEM Table Load:
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0xFFFF9E53D8172000 000724 (v02 PmRef  HwpLvt   00003000 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Dynamic OEM Table Load:
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0xFFFF9E53D8175000 0005FC (v02 PmRef  ApIst    00003000 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Dynamic OEM Table Load:
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0xFFFF9E53D7E69C00 000317 (v02 PmRef  ApHwp    00003000 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Dynamic OEM Table Load:
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0xFFFF9E53D7D3F000 000AB0 (v02 PmRef  ApPsd    00003000 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Dynamic OEM Table Load:
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: SSDT 0xFFFF9E53D7E68000 00030A (v02 PmRef  ApCst    00003000 INTL 20181003)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Interpreter enabled
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: (supports S0 S4 S5)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Using IOAPIC for interrupt routing
+Oct 31 20:09:02 BlackLightSpeed kernel: PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xe0000000-0xefffffff] (base 0xe0000000)
+Oct 31 20:09:02 BlackLightSpeed kernel: PCI: MMCONFIG at [mem 0xe0000000-0xefffffff] reserved in ACPI motherboard resources
+Oct 31 20:09:02 BlackLightSpeed kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Enabled 8 GPEs in block 00 to 7F
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Power Resource [BTPR] (on)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Power Resource [V0PR] (on)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Power Resource [V1PR] (on)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Power Resource [V2PR] (on)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Power Resource [CAMP] (off)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Power Resource [WRST] (on)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Power Resource [TBT0] (on)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Power Resource [TBT1] (on)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Power Resource [D3C] (on)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Power Resource [PIN] (off)
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-fe])
+Oct 31 20:09:02 BlackLightSpeed kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+Oct 31 20:09:02 BlackLightSpeed kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR]
+Oct 31 20:09:02 BlackLightSpeed kernel: PCI host bridge to bus 0000:00
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x000c0000-0x000c3fff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x000c4000-0x000c7fff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x000c8000-0x000cbfff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x000cc000-0x000cffff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x000d0000-0x000d3fff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x000d4000-0x000d7fff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x000d8000-0x000dbfff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x000dc000-0x000dffff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x000e0000-0x000e3fff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x000e4000-0x000e7fff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x000e8000-0x000ebfff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x000ec000-0x000effff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x000f0000-0x000fffff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x95400000-0xdfffffff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [mem 0x4000000000-0x7fffffffff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: root bus resource [bus 00-fe]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:00.0: [8086:8a12] type 00 class 0x060000
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:02.0: [8086:8a52] type 00 class 0x030000
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:02.0: reg 0x10: [mem 0x6000000000-0x6000ffffff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:02.0: reg 0x18: [mem 0x4000000000-0x400fffffff 64bit pref]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:02.0: reg 0x20: [io  0x3000-0x303f]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:02.0: BAR 2: assigned to efifb
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:04.0: [8086:8a03] type 00 class 0x118000
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:04.0: reg 0x10: [mem 0x6001120000-0x600112ffff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:0d.0: [8086:8a13] type 00 class 0x0c0330
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:0d.0: reg 0x10: [mem 0x6001110000-0x600111ffff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:0d.0: PME# supported from D3hot D3cold
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:12.0: [8086:34fc] type 00 class 0x070000
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:12.0: reg 0x10: [mem 0x600113a000-0x600113bfff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:12.0: PME# supported from D0 D3hot
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:14.0: [8086:34ed] type 00 class 0x0c0330
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:14.0: reg 0x10: [mem 0x6001100000-0x600110ffff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:14.0: PME# supported from D3hot D3cold
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:14.2: [8086:34ef] type 00 class 0x050000
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:14.2: reg 0x10: [mem 0x6001138000-0x6001139fff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:14.2: reg 0x18: [mem 0x6001141000-0x6001141fff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:14.3: [8086:34f0] type 00 class 0x028000
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:14.3: reg 0x10: [mem 0x6001134000-0x6001137fff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:14.3: PME# supported from D0 D3hot D3cold
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:15.0: [8086:34e8] type 00 class 0x0c8000
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:15.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:16.0: [8086:34e0] type 00 class 0x078000
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:16.0: reg 0x10: [mem 0x600113f000-0x600113ffff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:16.0: PME# supported from D3hot
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:16.4: [8086:34e4] type 00 class 0x078000
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:16.4: reg 0x10: [mem 0x600113e000-0x600113efff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:16.4: PME# supported from D3hot
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:19.0: [8086:34c5] type 00 class 0x0c8000
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:19.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1d.0: [8086:34b0] type 01 class 0x060400
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1d.0: PTM enabled (root), 4dns granularity
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1e.0: [8086:34a8] type 00 class 0x078000
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1e.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1f.0: [8086:3482] type 00 class 0x060100
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1f.3: [8086:34c8] type 00 class 0x040380
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1f.3: reg 0x10: [mem 0x6001130000-0x6001133fff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1f.3: reg 0x20: [mem 0x6001000000-0x60010fffff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1f.3: PME# supported from D3hot D3cold
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1f.5: [8086:34a4] type 00 class 0x0c8000
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1f.5: reg 0x10: [mem 0xfe010000-0xfe010fff]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:01:00.0: [1c5c:1327] type 00 class 0x010802
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:01:00.0: reg 0x10: [mem 0x95400000-0x95403fff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:01:00.0: supports D1
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:01:00.0: PME# supported from D0 D1 D3hot
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1d.0: PCI bridge to [bus 01]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1d.0:   bridge window [mem 0x95400000-0x954fffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Oct 31 20:09:02 BlackLightSpeed kernel: vgaarb: loaded
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: bus type USB registered
+Oct 31 20:09:02 BlackLightSpeed kernel: usbcore: registered new interface driver usbfs
+Oct 31 20:09:02 BlackLightSpeed kernel: usbcore: registered new interface driver hub
+Oct 31 20:09:02 BlackLightSpeed kernel: usbcore: registered new device driver usb
+Oct 31 20:09:02 BlackLightSpeed kernel: pps_core: LinuxPPS API ver. 1 registered
+Oct 31 20:09:02 BlackLightSpeed kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Oct 31 20:09:02 BlackLightSpeed kernel: PTP clock support registered
+Oct 31 20:09:02 BlackLightSpeed kernel: EDAC MC: Ver: 3.0.0
+Oct 31 20:09:02 BlackLightSpeed kernel: Registered efivars operations
+Oct 31 20:09:02 BlackLightSpeed kernel: PCI: Using ACPI for IRQ routing
+Oct 31 20:09:02 BlackLightSpeed kernel: PCI: pci_cache_line_size set to 64 bytes
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1f.5: can't claim BAR 0 [mem 0xfe010000-0xfe010fff]: no compatible bridge window
+Oct 31 20:09:02 BlackLightSpeed kernel: e820: reserve RAM buffer [mem 0x7ab45000-0x7bffffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: e820: reserve RAM buffer [mem 0x7beee000-0x7bffffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: e820: reserve RAM buffer [mem 0x46ac00000-0x46bffffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: NetLabel: Initializing
+Oct 31 20:09:02 BlackLightSpeed kernel: NetLabel:  domain hash size = 128
+Oct 31 20:09:02 BlackLightSpeed kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Oct 31 20:09:02 BlackLightSpeed kernel: NetLabel:  unlabeled traffic allowed by default
+Oct 31 20:09:02 BlackLightSpeed kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+Oct 31 20:09:02 BlackLightSpeed kernel: hpet0: 8 comparators, 64-bit 19.200000 MHz counter
+Oct 31 20:09:02 BlackLightSpeed kernel: clocksource: Switched to clocksource tsc-early
+Oct 31 20:09:02 BlackLightSpeed kernel: VFS: Disk quotas dquot_6.6.0
+Oct 31 20:09:02 BlackLightSpeed kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Oct 31 20:09:02 BlackLightSpeed kernel: *** VALIDATE hugetlbfs ***
+Oct 31 20:09:02 BlackLightSpeed kernel: pnp: PnP ACPI init
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:00: [io  0x0680-0x069f] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:00: [io  0x164e-0x164f] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:00: Plug and Play ACPI device, IDs PNP0c02 (active)
+Oct 31 20:09:02 BlackLightSpeed kernel: pnp 00:01: Plug and Play ACPI device, IDs PNP0b00 (active)
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:02: [io  0x1854-0x1857] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:02: Plug and Play ACPI device, IDs INT3f0d PNP0c02 (active)
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:03: [mem 0xfed10000-0xfed17fff] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:03: [mem 0xfeda0000-0xfeda0fff] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:03: [mem 0xfeda1000-0xfeda1fff] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:03: [mem 0xe0000000-0xefffffff] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:03: [mem 0xfed20000-0xfed7ffff] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:03: [mem 0xfed90000-0xfed93fff] could not be reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:03: [mem 0xfee00000-0xfeefffff] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:03: Plug and Play ACPI device, IDs PNP0c02 (active)
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:04: [io  0x1800-0x18fe] could not be reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:04: [mem 0xfd000000-0xfd68ffff] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:04: [mem 0xfd6b0000-0xfd6cffff] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:04: [mem 0xfd6f0000-0xfdffffff] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:04: [mem 0xfe000000-0xfe01ffff] could not be reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:04: [mem 0xfe200000-0xfe7fffff] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:04: [mem 0xff000000-0xffffffff] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:04: Plug and Play ACPI device, IDs PNP0c02 (active)
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:05: [io  0x2000-0x20fe] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:05: Plug and Play ACPI device, IDs PNP0c02 (active)
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:06: [mem 0xfe038000-0xfe038fff] has been reserved
+Oct 31 20:09:02 BlackLightSpeed kernel: system 00:06: Plug and Play ACPI device, IDs PNP0c02 (active)
+Oct 31 20:09:02 BlackLightSpeed kernel: pnp: PnP ACPI: found 7 devices
+Oct 31 20:09:02 BlackLightSpeed kernel: thermal_sys: Registered thermal governor 'fair_share'
+Oct 31 20:09:02 BlackLightSpeed kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Oct 31 20:09:02 BlackLightSpeed kernel: thermal_sys: Registered thermal governor 'step_wise'
+Oct 31 20:09:02 BlackLightSpeed kernel: thermal_sys: Registered thermal governor 'user_space'
+Oct 31 20:09:02 BlackLightSpeed kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Oct 31 20:09:02 BlackLightSpeed kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:15.0: BAR 0: assigned [mem 0x4010000000-0x4010000fff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:19.0: BAR 0: assigned [mem 0x4010001000-0x4010001fff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1e.0: BAR 0: assigned [mem 0x4010002000-0x4010002fff 64bit]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1f.5: BAR 0: assigned [mem 0x95500000-0x95500fff]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1d.0: PCI bridge to [bus 01]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:1d.0:   bridge window [mem 0x95400000-0x954fffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 7 [mem 0x000c0000-0x000c3fff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 8 [mem 0x000c4000-0x000c7fff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 9 [mem 0x000c8000-0x000cbfff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 10 [mem 0x000cc000-0x000cffff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 11 [mem 0x000d0000-0x000d3fff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 12 [mem 0x000d4000-0x000d7fff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 13 [mem 0x000d8000-0x000dbfff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 14 [mem 0x000dc000-0x000dffff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 15 [mem 0x000e0000-0x000e3fff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 16 [mem 0x000e4000-0x000e7fff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 17 [mem 0x000e8000-0x000ebfff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 18 [mem 0x000ec000-0x000effff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 19 [mem 0x000f0000-0x000fffff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 20 [mem 0x95400000-0xdfffffff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:00: resource 21 [mem 0x4000000000-0x7fffffffff window]
+Oct 31 20:09:02 BlackLightSpeed kernel: pci_bus 0000:01: resource 1 [mem 0x95400000-0x954fffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: NET: Registered protocol family 2
+Oct 31 20:09:02 BlackLightSpeed kernel: tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Oct 31 20:09:02 BlackLightSpeed kernel: TCP established hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Oct 31 20:09:02 BlackLightSpeed kernel: TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+Oct 31 20:09:02 BlackLightSpeed kernel: TCP: Hash tables configured (established 131072 bind 65536)
+Oct 31 20:09:02 BlackLightSpeed kernel: UDP hash table entries: 8192 (order: 6, 262144 bytes, linear)
+Oct 31 20:09:02 BlackLightSpeed kernel: UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes, linear)
+Oct 31 20:09:02 BlackLightSpeed kernel: NET: Registered protocol family 1
+Oct 31 20:09:02 BlackLightSpeed kernel: NET: Registered protocol family 44
+Oct 31 20:09:02 BlackLightSpeed kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Oct 31 20:09:02 BlackLightSpeed kernel: PCI: CLS 0 bytes, default 64
+Oct 31 20:09:02 BlackLightSpeed kernel: Trying to unpack rootfs image as initramfs...
+Oct 31 20:09:02 BlackLightSpeed kernel: Freeing initrd memory: 8876K
+Oct 31 20:09:02 BlackLightSpeed kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Oct 31 20:09:02 BlackLightSpeed kernel: software IO TLB: mapped [mem 0x725f4000-0x765f4000] (64MB)
+Oct 31 20:09:02 BlackLightSpeed kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x159647815e3, max_idle_ns: 440795269835 ns
+Oct 31 20:09:02 BlackLightSpeed kernel: clocksource: Switched to clocksource tsc
+Oct 31 20:09:02 BlackLightSpeed kernel: check: Scanning for low memory corruption every 60 seconds
+Oct 31 20:09:02 BlackLightSpeed kernel: Initialise system trusted keyrings
+Oct 31 20:09:02 BlackLightSpeed kernel: Key type blacklist registered
+Oct 31 20:09:02 BlackLightSpeed kernel: workingset: timestamp_bits=41 max_order=22 bucket_order=0
+Oct 31 20:09:02 BlackLightSpeed kernel: zbud: loaded
+Oct 31 20:09:02 BlackLightSpeed kernel: Key type asymmetric registered
+Oct 31 20:09:02 BlackLightSpeed kernel: Asymmetric key parser 'x509' registered
+Oct 31 20:09:02 BlackLightSpeed kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+Oct 31 20:09:02 BlackLightSpeed kernel: io scheduler mq-deadline registered
+Oct 31 20:09:02 BlackLightSpeed kernel: io scheduler kyber registered
+Oct 31 20:09:02 BlackLightSpeed kernel: io scheduler bfq registered
+Oct 31 20:09:02 BlackLightSpeed kernel: pcieport 0000:00:1d.0: PME: Signaling with IRQ 122
+Oct 31 20:09:02 BlackLightSpeed kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Oct 31 20:09:02 BlackLightSpeed kernel: efifb: probing for efifb
+Oct 31 20:09:02 BlackLightSpeed kernel: efifb: framebuffer at 0x4000000000, using 19496k, total 19494k
+Oct 31 20:09:02 BlackLightSpeed kernel: efifb: mode is 2736x1824x32, linelength=10944, pages=1
+Oct 31 20:09:02 BlackLightSpeed kernel: efifb: scrolling: redraw
+Oct 31 20:09:02 BlackLightSpeed kernel: efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+Oct 31 20:09:02 BlackLightSpeed kernel: fbcon: Deferring console take-over
+Oct 31 20:09:02 BlackLightSpeed kernel: fb0: EFI VGA frame buffer device
+Oct 31 20:09:02 BlackLightSpeed kernel: intel_idle: does not run on family 6 model 126
+Oct 31 20:09:02 BlackLightSpeed kernel: input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0
+Oct 31 20:09:02 BlackLightSpeed kernel: ACPI: Lid Switch [LID0]
+Oct 31 20:09:02 BlackLightSpeed kernel: Monitor-Mwait will be used to enter C-1 state
+Oct 31 20:09:02 BlackLightSpeed kernel: Monitor-Mwait will be used to enter C-2 state
+Oct 31 20:09:02 BlackLightSpeed kernel: Monitor-Mwait will be used to enter C-3 state
+Oct 31 20:09:02 BlackLightSpeed kernel: [Firmware Bug]: No valid trip found
+Oct 31 20:09:02 BlackLightSpeed kernel: [Firmware Bug]: No valid trip found
+Oct 31 20:09:02 BlackLightSpeed kernel: [Firmware Bug]: No valid trip found
+Oct 31 20:09:02 BlackLightSpeed kernel: [Firmware Bug]: No valid trip found
+Oct 31 20:09:02 BlackLightSpeed kernel: [Firmware Bug]: No valid trip found
+Oct 31 20:09:02 BlackLightSpeed kernel: [Firmware Bug]: No valid trip found
+Oct 31 20:09:02 BlackLightSpeed kernel: [Firmware Bug]: No valid trip found
+Oct 31 20:09:02 BlackLightSpeed kernel: [Firmware Bug]: No valid trip found
+Oct 31 20:09:02 BlackLightSpeed kernel: [Firmware Bug]: No valid trip found
+Oct 31 20:09:02 BlackLightSpeed kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Oct 31 20:09:02 BlackLightSpeed kernel: serial 0000:00:12.0: enabling device (0000 -> 0002)
+Oct 31 20:09:02 BlackLightSpeed kernel: AMD-Vi: AMD IOMMUv2 driver by Joerg Roedel <jroedel@suse.de>
+Oct 31 20:09:02 BlackLightSpeed kernel: AMD-Vi: AMD IOMMUv2 functionality not available on this system
+Oct 31 20:09:02 BlackLightSpeed kernel: nvme nvme0: pci function 0000:01:00.0
+Oct 31 20:09:02 BlackLightSpeed kernel: usbcore: registered new interface driver usbserial_generic
+Oct 31 20:09:02 BlackLightSpeed kernel: usbserial: USB Serial support registered for generic
+Oct 31 20:09:02 BlackLightSpeed kernel: rtc_cmos 00:01: RTC can wake from S4
+Oct 31 20:09:02 BlackLightSpeed kernel: rtc_cmos 00:01: registered as rtc0
+Oct 31 20:09:02 BlackLightSpeed kernel: rtc_cmos 00:01: alarms up to one month, y3k, 242 bytes nvram
+Oct 31 20:09:02 BlackLightSpeed kernel: intel_pstate: Intel P-state driver initializing
+Oct 31 20:09:02 BlackLightSpeed kernel: intel_pstate: HWP enabled
+Oct 31 20:09:02 BlackLightSpeed kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Oct 31 20:09:02 BlackLightSpeed kernel: intel_pmc_core INT33A1:00:  initialized
+Oct 31 20:09:02 BlackLightSpeed kernel: NET: Registered protocol family 10
+Oct 31 20:09:02 BlackLightSpeed kernel: Segment Routing with IPv6
+Oct 31 20:09:02 BlackLightSpeed kernel: NET: Registered protocol family 17
+Oct 31 20:09:02 BlackLightSpeed kernel: RAS: Correctable Errors collector initialized.
+Oct 31 20:09:02 BlackLightSpeed kernel: microcode: sig=0x706e5, pf=0x80, revision=0x38
+Oct 31 20:09:02 BlackLightSpeed kernel: microcode: Microcode Update Driver: v2.2.
+Oct 31 20:09:02 BlackLightSpeed kernel: sched_clock: Marking stable (1211472554, 4046311)->(1221981282, -6462417)
+Oct 31 20:09:02 BlackLightSpeed kernel: registered taskstats version 1
+Oct 31 20:09:02 BlackLightSpeed kernel: Loading compiled-in X.509 certificates
+Oct 31 20:09:02 BlackLightSpeed kernel: Loaded X.509 cert 'Build time autogenerated kernel key: bcc7f847c0b89da28b27ff9296b47170a301664d'
+Oct 31 20:09:02 BlackLightSpeed kernel: zswap: loaded using pool lzo/zbud
+Oct 31 20:09:02 BlackLightSpeed kernel: Key type big_key registered
+Oct 31 20:09:02 BlackLightSpeed kernel: PM:   Magic number: 11:716:151
+Oct 31 20:09:02 BlackLightSpeed kernel: rtc_cmos 00:01: setting system clock to 2019-11-01T00:09:01 UTC (1572566941)
+Oct 31 20:09:02 BlackLightSpeed kernel: nvme nvme0: missing or invalid SUBNQN field.
+Oct 31 20:09:02 BlackLightSpeed kernel: nvme nvme0: 8/0/0 default/read/poll queues
+Oct 31 20:09:02 BlackLightSpeed kernel:  nvme0n1: p1 p2 p3 p4 p5
+Oct 31 20:09:02 BlackLightSpeed kernel: Freeing unused decrypted memory: 2040K
+Oct 31 20:09:02 BlackLightSpeed kernel: Freeing unused kernel image memory: 1628K
+Oct 31 20:09:02 BlackLightSpeed kernel: Write protecting the kernel read-only data: 18432k
+Oct 31 20:09:02 BlackLightSpeed kernel: Freeing unused kernel image memory: 2012K
+Oct 31 20:09:02 BlackLightSpeed kernel: Freeing unused kernel image memory: 144K
+Oct 31 20:09:02 BlackLightSpeed kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Oct 31 20:09:02 BlackLightSpeed kernel: Run /init as init process
+Oct 31 20:09:02 BlackLightSpeed kernel: fbcon: Taking over console
+Oct 31 20:09:02 BlackLightSpeed kernel: Console: switching to colour frame buffer device 342x114
+Oct 31 20:09:02 BlackLightSpeed kernel: xhci_hcd 0000:00:0d.0: xHCI Host Controller
+Oct 31 20:09:02 BlackLightSpeed kernel: xhci_hcd 0000:00:0d.0: new USB bus registered, assigned bus number 1
+Oct 31 20:09:02 BlackLightSpeed kernel: xhci_hcd 0000:00:0d.0: hcc params 0x20007fc1 hci version 0x110 quirks 0x0000000000009810
+Oct 31 20:09:02 BlackLightSpeed kernel: xhci_hcd 0000:00:0d.0: cache line size of 64 is not supported
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.03
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb1: Product: xHCI Host Controller
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb1: Manufacturer: Linux 5.3.8-2-surface-ipts-test xhci-hcd
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb1: SerialNumber: 0000:00:0d.0
+Oct 31 20:09:02 BlackLightSpeed kernel: hub 1-0:1.0: USB hub found
+Oct 31 20:09:02 BlackLightSpeed kernel: hub 1-0:1.0: 1 port detected
+Oct 31 20:09:02 BlackLightSpeed kernel: xhci_hcd 0000:00:0d.0: xHCI Host Controller
+Oct 31 20:09:02 BlackLightSpeed kernel: xhci_hcd 0000:00:0d.0: new USB bus registered, assigned bus number 2
+Oct 31 20:09:02 BlackLightSpeed kernel: xhci_hcd 0000:00:0d.0: Host supports USB 3.1 Enhanced SuperSpeed
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.03
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb2: Product: xHCI Host Controller
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb2: Manufacturer: Linux 5.3.8-2-surface-ipts-test xhci-hcd
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb2: SerialNumber: 0000:00:0d.0
+Oct 31 20:09:02 BlackLightSpeed kernel: hub 2-0:1.0: USB hub found
+Oct 31 20:09:02 BlackLightSpeed kernel: hub 2-0:1.0: 4 ports detected
+Oct 31 20:09:02 BlackLightSpeed kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+Oct 31 20:09:02 BlackLightSpeed kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 3
+Oct 31 20:09:02 BlackLightSpeed kernel: xhci_hcd 0000:00:14.0: hcc params 0x20007fc1 hci version 0x110 quirks 0x0000000000009810
+Oct 31 20:09:02 BlackLightSpeed kernel: xhci_hcd 0000:00:14.0: cache line size of 64 is not supported
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.03
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb3: Product: xHCI Host Controller
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb3: Manufacturer: Linux 5.3.8-2-surface-ipts-test xhci-hcd
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb3: SerialNumber: 0000:00:14.0
+Oct 31 20:09:02 BlackLightSpeed kernel: hub 3-0:1.0: USB hub found
+Oct 31 20:09:02 BlackLightSpeed kernel: hub 3-0:1.0: 12 ports detected
+Oct 31 20:09:02 BlackLightSpeed kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+Oct 31 20:09:02 BlackLightSpeed kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 4
+Oct 31 20:09:02 BlackLightSpeed kernel: xhci_hcd 0000:00:14.0: Host supports USB 3.1 Enhanced SuperSpeed
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.03
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb4: Product: xHCI Host Controller
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb4: Manufacturer: Linux 5.3.8-2-surface-ipts-test xhci-hcd
+Oct 31 20:09:02 BlackLightSpeed kernel: usb usb4: SerialNumber: 0000:00:14.0
+Oct 31 20:09:02 BlackLightSpeed kernel: hub 4-0:1.0: USB hub found
+Oct 31 20:09:02 BlackLightSpeed kernel: hub 4-0:1.0: 6 ports detected
+Oct 31 20:09:02 BlackLightSpeed kernel: random: fast init done
+Oct 31 20:09:02 BlackLightSpeed kernel: EXT4-fs (nvme0n1p3): mounted filesystem with ordered data mode. Opts: (null)
+Oct 31 20:09:02 BlackLightSpeed kernel: usb 3-8: new full-speed USB device number 2 using xhci_hcd
+Oct 31 20:09:02 BlackLightSpeed kernel: random: crng init done
+Oct 31 20:09:02 BlackLightSpeed systemd[1]: Successfully credited entropy passed from boot loader.
+Oct 31 20:09:02 BlackLightSpeed systemd[1]: systemd 243.78-1-arch running in system mode. (+PAM +AUDIT -SELINUX -IMA -APPARMOR +SMACK -SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+Oct 31 20:09:02 BlackLightSpeed systemd[1]: Detected architecture x86-64.
+Oct 31 20:09:02 BlackLightSpeed systemd[1]: Set hostname to <BlackLightSpeed>.
+Oct 31 20:09:02 BlackLightSpeed systemd[1]: Created slice system-getty.slice.
+Oct 31 20:09:02 BlackLightSpeed systemd[1]: Created slice system-systemd\x2dfsck.slice.
+Oct 31 20:09:02 BlackLightSpeed systemd[1]: Created slice User and Session Slice.
+Oct 31 20:09:02 BlackLightSpeed systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Oct 31 20:09:02 BlackLightSpeed systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Oct 31 20:09:02 BlackLightSpeed systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+Oct 31 20:09:02 BlackLightSpeed systemd[1]: Reached target Local Encrypted Volumes.
+Oct 31 20:09:02 BlackLightSpeed kernel: usb 3-8: New USB device found, idVendor=045e, idProduct=09c0, bcdDevice= 0.07
+Oct 31 20:09:02 BlackLightSpeed kernel: usb 3-8: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Oct 31 20:09:02 BlackLightSpeed kernel: usb 3-8: Product: Surface Type Cover
+Oct 31 20:09:02 BlackLightSpeed kernel: usb 3-8: Manufacturer: Microsoft
+Oct 31 20:09:02 BlackLightSpeed kernel: EXT4-fs (nvme0n1p3): re-mounted. Opts: (null)
+Oct 31 20:09:02 BlackLightSpeed kernel: usb 4-6: new SuperSpeed Gen 1 USB device number 2 using xhci_hcd
+Oct 31 20:09:02 BlackLightSpeed kernel: audit: type=1130 audit(1572566942.463:2): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
